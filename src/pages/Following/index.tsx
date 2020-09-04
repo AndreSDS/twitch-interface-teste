@@ -3,6 +3,10 @@ import { View, FlatList } from 'react-native';
 
 import { Container, Wrapper, Main } from './styles';
 import Header from '../../components/Header';
+import Heading from '../../components/Heading';
+import Title from '../../components/Title';
+import CategoryList from '../../components/CategoryList';
+import StreamList from '../../components/StreamList';
 
 interface Item {
   key: string;
@@ -15,29 +19,29 @@ const Following: React.FC = () => {
     const items: Item[] = [
       {
         key: 'PAGE_HEADING',
-        render: () => <View />
+        render: () => <Heading>Following</Heading>
       },
       {
         key: 'FOLLOWED_CATEGORIES',
-        render: () => <View />,
+        render: () => <Title>Follwed Category</Title>,
         isTitle: true
       },
       {
         key: 'C1',
-        render: () => <View />
+        render: () => <CategoryList />
       },
       {
         key: 'LIVES_CHANNELS',
-        render: () => <View />,
+        render: () => <Title>Lives Channels</Title>,
         isTitle: true
       },
       {
         key: 'C2',
-        render: () => <View />
+        render: () => <StreamList />
       },
       {
         key: 'CONTINUE_WATCHING',
-        render: () => <View />,
+        render: () => <Title>Continue Watching</Title>,
         isTitle: true
       },
       {
@@ -46,7 +50,7 @@ const Following: React.FC = () => {
       },
       {
         key: 'OFFLINE_CHANNELS',
-        render: () => <View />,
+        render: () => <Title>Offline Channels</Title>,
         isTitle: true
       }
     ]
