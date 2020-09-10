@@ -46,12 +46,16 @@ const Following: React.FC = () => {
       },
       {
         key: 'C3',
-        render: () => <View />
+        render: () => <StreamList />
       },
       {
         key: 'OFFLINE_CHANNELS',
         render: () => <Title>Offline Channels</Title>,
         isTitle: true
+      },
+      {
+        key: 'C3',
+        render: () => <StreamList />
       }
     ]
 

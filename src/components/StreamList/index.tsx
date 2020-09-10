@@ -27,6 +27,13 @@ const StreamList: React.FC = () => {
             <StreamAvatar />
             <StreamUserName numberOfLines={1}>André</StreamUserName>
           </StreamHeader>
+        <StreamDescription numberOfLines={1}>
+          Front-end com Js
+        </StreamDescription>
+
+        <StreamCategory numberOfLines={1}>
+          Science & Tecnology
+        </StreamCategory>
         </StreamRow>
 
         <TagRow>
